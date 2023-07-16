@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+    height: 100px;
+    background-color: black;
+    background-image:url(/photos/bcimage.jpg);
+    background-size: 100%;
+    background-position: auto;
+}
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: orangered;
+    font-size: 1rem;
+}
+a:hover
+{
+    color: orange;
+}
+/* header */
+header
+{
+    position: relative;
+    padding: 0 20px;
+}
+
+.mainbar
+{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainbar .links
+{
+    display: flex;
+    gap: 20px;
+}
+.mainbar .toggle_btn
+{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+.mainbar .action_btn
+{
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.mainbar .action_btn:hover
+{
+    scale: 1.05;
+    color: orange;
+}
+.mainbar .action_btn:active
+{
+    scale: 0.95;
+}
+
+/* dropdown */
+.dropdown
+{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: hight .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown.open
+{
+    height: 240px;
+}
+
+.dropdown li
+{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .action_btn
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.dropdown .action_btn:hover
+{
+    scale: 1.05;
+    color: white;
+}
+.dropdown .action_btn:active
+{
+    scale: 0.95;
+}
+
+/* Responsive design */
+@media(max-width: 992px)
+{
+    .mainbar .links,
+    .mainbar .action_btn
+    {
+        display: none;
+    }
+    .mainbar .toggle_btn
+    {
+        display: block;
+    }
+}
+
+.dropdown
+{
+    display: block;
+
+}
