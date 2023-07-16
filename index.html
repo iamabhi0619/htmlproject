@@ -3,32 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boston University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Header</title>
 </head>
 <body>
-    <header class="header">
-        <div class="rt-heading">
-            <p style="text-align: center;"><img src="/htmlproject/Logo.png" height="100" style="text-align: center;" alt="Student Dp" /></p>
-            <h1 style="text-align: center;">Boston University</h1>
-            <h4 style="text-align: center;">Student Profile</h4>
+    <header>
+        <div class="mainbar">
+            <div class="logo">
+                <a href="/about.html"><img src="iamabhi0619/htmlproject/PHOTO.png" alt="logo"/ height="50" style="border-radius: 50%;"></a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contect.html">Contect</a></li>
+            </ul>
+            <a href="collage.html" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contect.html">Contect</a></li>
+                <li><a href="collage.html" class="action_btn">Get Started</a></li>
         </div>
     </header>
-    <div>
-        <p style="text-align: center;"><img src="/htmlproject/PHOTO.png" height="200" style="text-align: center;" alt="Student Dp" /></p>
-        <h3 style="text-align: center;">Avinav Kumar</h3>
-    </div>
-    <hr/>
-    <h2>Genral Information</h2>
-    <p><b>Student ID:-</b> 12303455</p>
-    <p><b>Roll NO.:- </b>23063</p>
-    <p><b>Semester:- </b>B.tech 1sem</p>
-    <p><b>Academic Year:- </b>2023-24</p>
-    <p><b>Gender:- </b>Male</p>
-    <hr/>
-    <h2>His Achievement</h2>
-    <a href="/htmlproject/project.html"><p style="font-size: large;">Project Done by him</p></a>
-    <a href="/htmlproject/expriment.html"><p style="font-size: large;">His Expriment</p></a>
-    <a href="/htmlproject/education.html"><p style="font-size: large;">His Education Qualification</p></a>
-    <a href="/htmlproject/experience.html"><p style="font-size: large;">His Experience</p></a>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown');
+
+        toggleBtn.onclick = function()
+        {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmarks' : 'fa-solid fa-bars';
+        };
+
+        // Close the dropdown menu when clicking outside of it
+        window.onclick = function(event)
+        {
+            if (!event.target.matches('.toggle_btn') && !event.target.matches('.toggle_btn i'))
+            {
+                if (dropDownMenu.classList.contains('open'))
+                {
+                    dropDownMenu.classList.remove('open');
+                    toggleBtnIcon.classList = 'fa-solid fa-bars';
+                }
+            }
+        };
+
+    </script>
 </body>
 </html>
