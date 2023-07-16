@@ -8,7 +8,7 @@
 body
 {
     height: 100px;
-    background-color: black;
+    background-color: lightblue;
     background-image:url(/photos/bcimage.jpg);
     background-size: 100%;
     background-position: auto;
