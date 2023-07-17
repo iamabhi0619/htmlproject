@@ -8,13 +8,15 @@
 body
 {
     height: 100px;
-    background-color: #ADD8E6
+    background-color: #ADD8E6;
+    background-size: 100%;
+    background-position: auto;
 }
 li
 {
     list-style: none;
 }
-a
+#al
 {
     text-decoration: none;
     color: orangered;
@@ -144,4 +146,32 @@ header
 {
     display: block;
 
+}
+/* .profile
+{
+    text-align: center;
+    display: flex;
+}
+.link
+{
+    background-color: antiquewhite;
+    text-align: center;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 20px;
+    position: inherit;
+    justify-content: center;
+} */
+.profile
+{
+    text-align: center;
+}
+#profile_link
+{
+    text-decoration: none;
+    color: black;
+    background-color: aquamarine;
+    padding: 5px;
+    text-align: end;
+    border-radius: 10px;
 }

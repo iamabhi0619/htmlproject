@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div class="mainbar">
+            <div class="logo">
+                <a href="/about.html"><img src="/photos/Logo.png" alt="logo"/ height="50" style="border-radius: 50%;"></a>
+            </div>
+            <ul class="links">
+                <li><a id="al" href="index.html">Home</a></li>
+                <li><a id="al"href="About.html">About</a></li>
+                <li><a id="al" href="service.html">Service</a></li>
+                <li><a id="al" href="contect.html">Contect</a></li>
+            </ul>
+            <a href="collage.html" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contect.html">Contect</a></li>
+                <li><a href="collage.html" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown');
+
+        toggleBtn.onclick = function()
+        {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmarks' : 'fa-solid fa-bars';
+        };
+
+        // Close the dropdown menu when clicking outside of it
+        window.onclick = function(event)
+        {
+            if (!event.target.matches('.toggle_btn') && !event.target.matches('.toggle_btn i'))
+            {
+                if (dropDownMenu.classList.contains('open'))
+                {
+                    dropDownMenu.classList.remove('open');
+                    toggleBtnIcon.classList = 'fa-solid fa-bars';
+                }
+            }
+        };
+    </script>
+    <div class="profile">
+        <div class="teb">
+            <li><a id="profile_link" href="student.html">Student profile</a></li>
+            <br>
+            <li><a id="profile_link" href="Teacher.html">Teacher profile</a></li>
+            <br>
+            <li><a id="profile_link" href="officer.html">Office Disk</a></li>
+    </div>
+    </div>
+</body>
+</html>
