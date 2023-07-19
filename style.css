@@ -1,4 +1,5 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -147,10 +148,11 @@ header
     display: block;
 
 }
-/* .profile
+profile
 {
     text-align: center;
     display: flex;
+    
 }
 .link
 {
@@ -161,7 +163,7 @@ header
     border-radius: 20px;
     position: inherit;
     justify-content: center;
-} */
+}
 .profile
 {
     text-align: center;
@@ -175,4 +177,6 @@ header
     padding: 5px;
     text-align: end;
     border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
 }

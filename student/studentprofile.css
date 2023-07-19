@@ -1,0 +1,148 @@
+body
+{
+    background: linear-gradient(#d8d5db, #adacb5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+#head4
+{
+    display: inline-block;
+    background-color: #b0d7ff;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    color: #2d3142;
+}
+.social
+{
+    background-color: #adacb5;
+    border-radius: 10px;
+    width: 300px;
+}
+  
+.logo
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: block;
+}
+.logo h2, .logo h3, .logo p
+{
+    margin: 0;
+}
+.social hr
+{
+    border: none;
+    border-top: 1px solid ;
+}
+.social_list
+{
+    margin: 0;
+    padding: 10px;
+}
+.logo a, .logo h3
+{
+    text-align: right;
+    display: block;
+    text-decoration: none;
+}
+.logo a
+{
+    color: darkcyan
+}
+.profile
+{
+    background-color: #adacb5;
+    border-radius: 10px;
+    width: 300px;
+}
+img
+{
+    height: 100px;
+    border-radius: 50%;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 5px;
+}
+.info
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+}
+.info h3, .info h4, .info p
+{
+    margin: auto;
+}
+.info i{
+    display: inline-block;
+    margin: 5px;
+}
+.profile_list
+{
+    margin: 0;
+    padding: 10px;
+}
+.logo hr
+{
+    border: none;
+    border-top: 1px solid ;
+}
+/* img
+{
+    height: 100px;
+    border-radius: 50%;
+    border-color: aqua;
+    border-style: solid;
+    border-width: 5px;
+}
+.profile
+{
+    background-color: #adacb5;
+    border-radius: 10px;
+    width: 300px;
+}
+  
+.info
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info h3, .info h4, .info p
+{
+    margin: 0;
+}
+.profile hr
+{
+    border: none;
+    border-top: 1px solid ;
+}
+.profile
+{
+    margin: 0;
+    padding: 10px;
+}
+.info a, .info h3
+{
+    text-align: right;
+    display: block;
+    text-decoration: none;
+}
+.info a
+{
+    color: darkcyan
+}
+.info i
+{
+    display: inline-flex;
+} */
